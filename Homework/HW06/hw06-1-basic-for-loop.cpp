@@ -30,3 +30,22 @@
         [7] Hello World
 
 */
+#include <stdio.h>
+
+int main() {
+    int numLines;
+    printf("Test cases:\n");
+    scanf("%d", &numLines);
+
+    printf("Output:\n");
+
+    for (int i = 1; i <= numLines; i++) {
+        if (numLines % 2 == 0) {
+            printf("    (%d) Hello World\n", i);
+        } else {
+            printf("    [%d] Hello World\n", i);
+        }
+    }
+
+    return 0;
+}
