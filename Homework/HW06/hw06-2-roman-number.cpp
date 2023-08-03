@@ -23,3 +23,31 @@
         929 = CMXXIX
 
 */
+#include <stdio.h>
+
+void convertToRoman(int num) {
+    int values[] = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+    char *numerals[] = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+
+    printf("%d = ", num);
+
+    for (int i = 0; num > 0; i++) {
+        while (num >= values[i]) {
+            printf("%s", numerals[i]);
+            num -= values[i];
+        }
+    }
+
+    printf("\n");
+}
+
+int main() {
+    int num;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    convertToRoman(num);
+
+    return 0;
+}
