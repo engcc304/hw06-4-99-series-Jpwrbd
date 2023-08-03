@@ -35,11 +35,15 @@ int main() {
     printf("Output:\n");
     for (int i = n; i >= 2; i--) {
         if (isPrime(i)) {
-            printf("%d ", i);
+            printf("%d", i);
+            if (i != 2) {
+                printf(" ");
+            }
         }
     }
 
     return 0;
 }
+
 
 
