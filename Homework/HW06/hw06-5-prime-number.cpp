@@ -28,8 +28,8 @@ int isPrime(int num) {
 
 int main() {
     int n;
-
-    printf("Enter number: ");
+    printf("Test case:\n");
+    printf("    Enter number: ");
     scanf("%d", &n);
 
     printf("Output:\n");
