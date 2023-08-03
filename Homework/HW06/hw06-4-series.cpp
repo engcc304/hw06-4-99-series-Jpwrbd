@@ -1,7 +1,7 @@
 /*
     จงเขียนโปรแกรมภาษาซีเพื่อรับข้อมูลจากผู้ใช้เป็นตัวเลข และให้แสดงชุดอนุกรมตามจำนวนตัวเลขที่กรอก พร้อมกับแสดงผลรวมของชุดอนุกรมนี้ 9 + 99 + 999 + 9999 + 9999 + .... เช่น ผู้ใช้กรอกเลข 5 ให้แสดงชุดอนุกรมคือ 9 + 99 + 999 + 9999 + 99999 และแสดงผลรวมคือ 111105
     (โจทย์ข้อนี้ให้ใช้ For Loop เท่านั้น)
-    
+
     Test case:
         Enter number :
             5
@@ -18,27 +18,23 @@
 */
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int n, i;
     long series = 0, sum = 0;
-
     printf("Enter number: ");
     scanf("%d", &n);
-
     printf("Series = ");
-    for (i = 1; i <= n; i++) {
+    for (i = 1; i <= n; i++)
+    {
         series = series * 10 + 9;
         sum += series;
         printf("%ld", series);
-
-        if (i != n) {
+        if (i != n)
+        {
             printf(" + ");
         }
     }
-
     printf("\nSum = %ld\n", sum);
-
     return 0;
 }
-
-
