@@ -27,8 +27,8 @@ int main() {
 
     printf("Series = ");
     for (i = 1; i <= n; i++) {
-        series = series * 10 + 9; // Construct the series element
-        sum += series; // Add the current element to the sum
+        series = series * 10 + 9;
+        sum += series;
         printf("%ld", series);
 
         if (i != n) {
@@ -36,8 +36,9 @@ int main() {
         }
     }
 
-    printf("\nsum = %ld\n", sum);
+    printf("\nSum = %ld\n", sum);
 
     return 0;
 }
+
 
